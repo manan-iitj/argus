@@ -1,0 +1,97 @@
+// ARGUS brownish texture materials for industrial_zone_real.
+// Referenced from worlds/industrial_zone_real.sdf via
+//   <material><script><uri>file://.../materials/scripts</uri>
+//                        <uri>file://.../materials/textures</uri>
+//   <name>Argus/...</name></script>...</material>
+// The SDF also carries a brown ambient/diffuse colour, so if a texture
+// ever fails to resolve the surface still renders brownish.
+
+material Argus/BrownConcrete
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.1 0.1 0.1 1.0 5.0
+      texture_unit
+      {
+        texture brown_concrete.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Argus/DirtGround
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.05 0.05 0.05 1.0 1.0
+      texture_unit
+      {
+        texture dirt_ground.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Argus/RustSteel
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.25 0.25 0.25 1.0 10.0
+      texture_unit
+      {
+        texture rust_steel.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Argus/WoodPlank
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.1 0.1 0.1 1.0 5.0
+      texture_unit
+      {
+        texture wood_plank.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material Argus/BrickWall
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.05 0.05 0.05 1.0 1.0
+      texture_unit
+      {
+        texture brick_wall.png
+        filtering trilinear
+      }
+    }
+  }
+}
